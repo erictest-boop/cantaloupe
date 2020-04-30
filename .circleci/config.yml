@@ -19,7 +19,6 @@ jobs: # a collection of steps
       - restore_cache: # restore the saved cache after the first run or if `pom.xml` has changed
           # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
           key: cantaloupe-{{ checksum "pom.xml" }}
-      - run: mvn clean install -U
       - run: mvn de.qaware.maven:go-offline-maven-plugin:resolve-dependencies # gets the project dependencies
       
       - save_cache: # saves the project dependencies
