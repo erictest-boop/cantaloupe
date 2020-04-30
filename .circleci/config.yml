@@ -31,5 +31,5 @@ jobs: # a collection of steps
           when: always
       - store_test_results:
           path: ~/test-results
-       - store_artifacts:
+      - store_artifacts:
           path: ~/test-results/junit
