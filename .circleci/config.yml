@@ -26,7 +26,7 @@ jobs: # a collection of steps
             - ~/.m2
           key: cantaloupe--{{ checksum "pom.xml" }}
       
-      - run: mvn package # run the actual tests
+      - run: mvn clean test -Pnodeps # run the actual tests
       - run:
           name: Save test results
           command: |
