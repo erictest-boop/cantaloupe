@@ -15,12 +15,5 @@ Thumbs.db
 nbactions.xml
 
 # App config
-/cantaloupe.properties
-/cantaloupe*.properties
-/delegates.*
-/delegates*.*
-/test.properties
-/overlay.*
-
 # Auto-generated content
 /target
